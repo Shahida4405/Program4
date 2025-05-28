@@ -16,4 +16,13 @@ class BookSales {
         System.out.println("Number of Sales: " + numberOfSales);
         System.out.println("Seller ID: " + sellerId);
     }
+
+    // ✅ Main method to run the program
+    public static void main(String[] args) {
+        Book book = new Book("Java for Beginners", "John Doe", "TechBooks", 499.99, 2022);
+        book.display();
+
+        BookSales seller = new BookSales("Alice", 120, 101);
+        seller.display();
+    }
 }
